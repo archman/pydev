@@ -34,5 +34,5 @@ record(ao, "test_pv") {
     field(DTYP, "Soft Channel")
     field(OUT, "0")
     field(VAL, "0")
-    field(PINIT, "YES")
+    field(PINI, "YES")
 }
