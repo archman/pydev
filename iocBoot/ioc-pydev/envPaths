@@ -1,0 +1,4 @@
+epicsEnvSet("IOC","ioc-pydev")
+epicsEnvSet("TOP","/home/tong/Dropbox/FRIB/work/ioc/test_pyepics/pydev")
+epicsEnvSet("EPICS_BASE","/home/tong/Dropbox/epics/base")
+epicsEnvSet("PYDEVSUP","/home/tong/Dropbox/FRIB/work/ioc/tools/pyDevSup")

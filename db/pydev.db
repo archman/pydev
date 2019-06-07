@@ -1,0 +1,38 @@
+record(bo, "$(P)TRIGGER_CMD") {
+    field(DTYP, "Python Device")
+    field(OUT,  "@devsup.ptable pydev set trigger")
+    field(VAL,  "1")
+    field(SCAN, "1 second")
+}
+
+record(ao, "$(P)A_CSET") {
+    field(DTYP, "Python Device")
+    field(OUT,  "@devsup.ptable pydev set a")
+    field(VAL,  "1")
+    field(PINI, "YES")
+    field(PREC, "1")
+}
+
+record(ao, "$(P)B_CSET") {
+    field(DTYP, "Python Device")
+    field(OUT,  "@devsup.ptable pydev set b")
+    field(VAL,  "2")
+    field(PINI, "YES")
+    field(PREC, "1")
+}
+
+record(ai, "$(P)SUM_RD") {
+    field(DTYP, "Python Device")
+    field(INP,  "@devsup.ptable pydev get s")
+    field(PINI, "YES")
+    field(PREC, "1")
+    field(VAL,  "0")
+    field(SCAN, "I/O Intr")
+}
+
+record(ao, "test_pv") {
+    field(DTYP, "Soft Channel")
+    field(OUT, "0")
+    field(VAL, "0")
+    field(PINIT, "YES")
+}
